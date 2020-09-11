@@ -71,7 +71,8 @@ const performMath = (e) => {
                 valueDisplayed = "0";
                 displayZero.innerHTML = valueDisplayed;
                 evalArray.push(pendingVal);
-                evalArray.push('%');
+                evalArray.push('*');
+                
            
            break;
         case "=":
