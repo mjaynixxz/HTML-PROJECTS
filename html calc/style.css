@@ -2,11 +2,26 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
     font-weight: lighter;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+        
+}
+
+body::selection {
+   background: none;
+   color: none;  
 }
 
 .container {
     margin-left: calc(50% - 200px);
     
+  }
+
+  .container::selection {
+     color: none;
+    background: none;
   }
 
 .calc-btns {
